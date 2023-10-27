@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://hnabbm2mxoi6"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_a0v05"]
+[ext_resource type="PackedScene" uid="uid://da42svs4luong" path="res://Scenes/paddle.tscn" id="1_rqljg"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_a0v05")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Paddle" parent="." instance=ExtResource("1_rqljg")]
+position = Vector2(0, 246)
