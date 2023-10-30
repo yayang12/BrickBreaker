@@ -8,5 +8,6 @@ script = ExtResource("1_a0v05")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="Paddle" parent="." instance=ExtResource("1_rqljg")]
+[node name="Paddle" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("1_rqljg")]
 position = Vector2(0, 246)
+camera = NodePath("../Camera2D")
