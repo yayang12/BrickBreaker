@@ -11,7 +11,6 @@ var is_ball_started = false
 @export var camera: Camera2D
 
 @onready var ball = $"../Ball" as Ball
-
 @onready var collision_shape_2d = $CollisionShape2D
 
 func _ready():
@@ -34,7 +33,7 @@ func _input(event):
 	if Input.is_action_pressed("left"):
 		direction = Vector2.LEFT
 	elif Input.is_action_pressed("right"):
-		direction =  Vector2.RIGHT
+		direction = Vector2.RIGHT
 	else:
 		direction = Vector2.ZERO
 	

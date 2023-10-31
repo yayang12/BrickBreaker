@@ -1,3 +1,5 @@
 CollisionShape2D
+RigidBody2D
+Node
 Sprite2D
 CharacterBody2D
