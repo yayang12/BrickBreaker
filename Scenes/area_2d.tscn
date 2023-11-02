@@ -1,9 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://c76unjhfs8en1"]
+[gd_scene load_steps=3 format=3 uid="uid://c76unjhfs8en1"]
+
+[ext_resource type="Script" path="res://Scripts/area_2d.gd" id="1_eluds"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lk4ou"]
 size = Vector2(1164, 20)
 
-[node name="Area2D" type="Area2D"]
+[node name="DeathZone" type="Area2D"]
+script = ExtResource("1_eluds")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_lk4ou")
