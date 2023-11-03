@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://cte8f8n4upcas"]
 
-[ext_resource type="Script" path="res://Scenes/ui.gd" id="1_131bu"]
+[ext_resource type="Script" path="res://Scripts/ui.gd" id="1_u65ec"]
 [ext_resource type="FontFile" uid="uid://cgtl4f4f8l0um" path="res://Assets/VT323-Regular.ttf" id="2_hxcxc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ss4as"]
 bg_color = Color(0.996078, 0, 0.431373, 1)
 
 [node name="UI" type="CanvasLayer"]
-script = ExtResource("1_131bu")
+script = ExtResource("1_u65ec")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 15
@@ -24,7 +24,7 @@ theme_override_constants/margin_bottom = 16
 visible = false
 layout_mode = 2
 
-[node name="LifesLabel" type="Label" parent="MarginContainer/GameLostContainer"]
+[node name="LivesLabel" type="Label" parent="MarginContainer/GameLostContainer"]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -32,7 +32,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_fonts/font = ExtResource("2_hxcxc")
 theme_override_font_sizes/font_size = 42
-text = "Lifes: 3"
+text = "Lives: 3"
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 anchors_preset = 15

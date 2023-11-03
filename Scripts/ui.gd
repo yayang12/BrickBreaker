@@ -2,11 +2,11 @@ extends CanvasLayer
 
 class_name UI
 
-@onready var lives_label = %LifesLabel
+@onready var lives_label = %LivesLabel
 @onready var game_lost_container = $GameLostContainer
 
-func set_lifes (lives:int):
-	lives_label.text = "lives: %d" % lives
+func set_lives (lives: int):
+	lives_label.text = "Lives: %d" % lives
 
 func game_over():
 	game_lost_container.show()
