@@ -22,7 +22,7 @@ camera = NodePath("../Camera2D")
 [node name="Ball" parent="." node_paths=PackedStringArray("death_zone", "ui") instance=ExtResource("3_plfc6")]
 position = Vector2(2.08165e-12, 152)
 collision_mask = 14
-death_zone = NodePath("")
+death_zone = NodePath("../DeathZone")
 ui = NodePath("../UI")
 
 [node name="Walls" type="Node" parent="."]

@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 class_name Ball
 
+
 const VELOCITY_LIMIT = 40
 
 @export var ball_speed = 20
@@ -16,9 +17,9 @@ var speed_up_factor = 1.05
 var start_position: Vector2
 
 func _ready():
-	
+	ui.set_lives(lives)
 	start_position = position
-	death_zone.life_lost.connect(on_life_lost)
+	#death_zone.life_lost(on_life.connect_lost)
 
 func _physics_process(delta):
 	var collision = move_and_collide(velocity * ball_speed * delta)
