@@ -1,9 +1,9 @@
+HBoxContainer
 Button
 Label
 VBoxContainer
 Panel
 CenterContainer
-HBoxContainer
 MarginContainer
 CanvasLayer
 CollisionShape2D
