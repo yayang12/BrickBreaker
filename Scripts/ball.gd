@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 class_name Ball
 
+signal  life_lost
 
 const VELOCITY_LIMIT = 40
 
@@ -19,7 +20,8 @@ var start_position: Vector2
 func _ready():
 	ui.set_lives(lives)
 	start_position = position
-	#death_zone.life_lost(on_life.connect_lost)
+	death_zone.life_lost.connect(on_life_lost)
+	
 
 func _physics_process(delta):
 	var collision = move_and_collide(velocity * ball_speed * delta)
@@ -29,7 +31,6 @@ func _physics_process(delta):
 	velocity = velocity.bounce(collision.get_normal())
 	
 func start_ball():
-	ui.set_lives(lives)
 	position = start_position
 	randomize()
 	
@@ -38,9 +39,9 @@ func start_ball():
 func on_life_lost():
 	lives -= 1
 	if lives == 0:
-		pass
-		#ui.game_over()
+		ui.game_over()
 	else:
+		life_lost.emit()
 		reset_ball()
 		ui.set_lives(lives)
 		
