@@ -4,20 +4,21 @@
 [ext_resource type="Script" path="res://Scripts/brick.gd" id="1_wafp8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fihhi"]
-size = Vector2(418, 107)
+size = Vector2(48, 13)
 
 [node name="Brick" type="RigidBody2D"]
-visible = false
+scale = Vector2(0.5, 0.5)
+collision_layer = 8
 gravity_scale = 2.66454e-15
 lock_rotation = true
 freeze = true
 script = ExtResource("1_wafp8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
+position = Vector2(0, -6.91414e-08)
+scale = Vector2(0.18, 0.18)
 texture = ExtResource("1_18p4s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(4, 0)
+scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_fihhi")

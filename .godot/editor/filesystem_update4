@@ -10,3 +10,5 @@ res://Scenes/wall.tscn
 res://Scenes/death_zone.tscn
 res://Scenes/brick.tscn
 res://Scenes/ui.tscn
+res://Scripts/main.gd
+res://Scripts/brick_spawner.gd
