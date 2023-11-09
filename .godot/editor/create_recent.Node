@@ -1,5 +1,15 @@
-CollisionShape2D
-RigidBody2D
+Marker2D
 Node
+HBoxContainer
+Button
+Label
+VBoxContainer
+Panel
+CenterContainer
+MarginContainer
+CanvasLayer
+CollisionShape2D
 Sprite2D
+RigidBody2D
+Area2D
 CharacterBody2D
