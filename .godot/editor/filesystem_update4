@@ -1,3 +1,5 @@
 res://Scenes/main.tscn
 res://Scripts/ball.gd
 res://Scripts/brick_spawner.gd
+res://Scenes/paddle.tscn
+res://Scripts/paddle.gd
