@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cte8f8n4upcas" path="res://Scenes/ui.tscn" id="6_rtcur"]
 [ext_resource type="PackedScene" uid="uid://c76unjhfs8en1" path="res://Scenes/death_zone.tscn" id="6_yvi1x"]
 [ext_resource type="Script" path="res://Scripts/brick_spawner.gd" id="7_8ax38"]
-[ext_resource type="PackedScene" uid="uid://tjjl04fjtboj" path="res://Scenes/brick.tscn" id="8_yc7mg"]
+[ext_resource type="PackedScene" uid="uid://jws1bt5puct5" path="res://Scenes/brick.tscn" id="8_yc7mg"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_a0v05")
