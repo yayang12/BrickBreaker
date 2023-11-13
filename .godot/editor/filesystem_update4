@@ -5,3 +5,4 @@ res://Scenes/main.tscn
 res://Scenes/brick.tscn
 res://Scenes/paddle.tscn
 res://Scripts/paddle.gd
+res://Scripts/level_definitions.gd
