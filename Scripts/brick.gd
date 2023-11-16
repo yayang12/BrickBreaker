@@ -38,6 +38,7 @@ func fade_out():
 	tween.tween_callback(destroy)
 	
 func destroy():
+	$BrickSound.play()
 	queue_free()
 	brick_destroyed.emit()
 		
