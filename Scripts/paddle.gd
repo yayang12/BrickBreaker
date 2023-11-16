@@ -12,6 +12,7 @@ var is_ball_started = false
 
 @onready var ball = $"../Ball" as Ball
 @onready var collision_shape_2d = $CollisionShape2D
+@onready var music = $Music
 
 func _ready():
 	ball.life_lost.connect(on_ball_lost)
@@ -41,6 +42,8 @@ func _input(event):
 	if direction != Vector2.ZERO && !is_ball_started:
 		ball.start_ball()
 		is_ball_started = true
+		
+		$Music.play()
 		
 func on_ball_lost():
 	is_ball_started = false

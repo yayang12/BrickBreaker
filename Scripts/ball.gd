@@ -11,6 +11,7 @@ const VELOCITY_LIMIT = 40
 @export var death_zone: DeathZone
 @export var ui: UI
 
+
 var speed_up_factor = 1.05 
 var start_position: Vector2
 var last_collider_id
@@ -41,6 +42,7 @@ func _physics_process(delta):
 		velocity = velocity.bounce(collision.get_normal())
 	
 func start_ball():
+	
 	position = start_position
 	randomize()
 	
