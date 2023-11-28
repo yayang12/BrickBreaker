@@ -16,6 +16,8 @@ var speed_up_factor = 1.05
 var start_position: Vector2
 var last_collider_id
 
+@onready var ball_collide_sound = $BallCollideSound
+
 
 @onready var collision_shape_2d = $CollisionShape2D
 
@@ -38,6 +40,7 @@ func _physics_process(delta):
 		
 	if(collider is Brick or collider is Paddle):
 		ball_collision(collider)
+		ball_collide_sound.play()
 	else:	
 		velocity = velocity.bounce(collision.get_normal())
 	
