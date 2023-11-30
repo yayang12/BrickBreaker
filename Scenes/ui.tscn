@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cte8f8n4upcas"]
+[gd_scene load_steps=6 format=3 uid="uid://cte8f8n4upcas"]
 
 [ext_resource type="Script" path="res://Scripts/ui.gd" id="1_u65ec"]
 [ext_resource type="FontFile" uid="uid://cgtl4f4f8l0um" path="res://Assets/VT323-Regular.ttf" id="2_hxcxc"]
+[ext_resource type="AudioStream" uid="uid://cb7fiqilphjs3" path="res://Assets/Sounds/Win sound.wav" id="3_dpxl4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ss4as"]
 bg_color = Color(0.996078, 0, 0.431373, 1)
@@ -101,6 +102,9 @@ vertical_alignment = 1
 [node name="LevelWonButton" type="Button" parent="LevelWonContainer/Panel/VBoxContainer"]
 layout_mode = 2
 text = "NEXT LEVEL PLEASE"
+
+[node name="WinSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_dpxl4")
 
 [connection signal="pressed" from="GameLostContainer/Panel/VBoxContainer/GameLostButton" to="." method="_on_game_lost_button_pressed"]
 [connection signal="pressed" from="LevelWonContainer/Panel/VBoxContainer/LevelWonButton" to="." method="_on_game_lost_button_pressed"]

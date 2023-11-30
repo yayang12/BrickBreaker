@@ -5,3 +5,5 @@ res://Scenes/ball.tscn
 res://Scenes/brick.tscn
 res://Scenes/paddle.tscn
 res://Scenes/ui.tscn
+res://Scripts/brick.gd
+res://Scripts/ui.gd
