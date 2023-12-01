@@ -5,6 +5,9 @@ class_name UI
 @onready var lives_label = %LivesLabel
 @onready var game_lost_container = $GameLostContainer
 @onready var level_won_container = $LevelWonContainer
+@onready var win_sound = $WinSound
+@onready var lose_sound = $LoseSound
+
 
 
 func set_lives (lives: int):
@@ -12,11 +15,13 @@ func set_lives (lives: int):
 
 func game_over():
 	game_lost_container.show()
-
+	$LoseSound.play()
+	
 func _on_game_lost_button_pressed():
 	get_tree().reload_current_scene()
 
-func on_level_won():
+func on_level_won():	
+	$WinSound.play()
 	level_won_container.show()
 		
 func _on_level_won_button_pressed():

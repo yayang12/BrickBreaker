@@ -11,13 +11,14 @@ const ROWS = 6
 @export var brick_scene: PackedScene
 @export var margin: Vector2 = Vector2(8,8)
 @export var spawn_start: Marker2D
+@onready var background = $background
 
 var brick_count = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print(LevelDefinitions)
 	spawn_from_definition(LevelDefinitions.get_current_level())
-
+	background.play()
 
 func spawn():
 	var test_brick = brick_scene.instantiate() as Brick
