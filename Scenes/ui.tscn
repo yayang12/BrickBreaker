@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cte8f8n4upcas"]
+[gd_scene load_steps=7 format=3 uid="uid://cte8f8n4upcas"]
 
 [ext_resource type="Script" path="res://Scripts/ui.gd" id="1_u65ec"]
 [ext_resource type="FontFile" uid="uid://cgtl4f4f8l0um" path="res://Assets/VT323-Regular.ttf" id="2_hxcxc"]
 [ext_resource type="AudioStream" uid="uid://cb7fiqilphjs3" path="res://Assets/Sounds/Win sound.wav" id="3_dpxl4"]
+[ext_resource type="AudioStream" uid="uid://dth05gh6b3d5t" path="res://Assets/Sounds/lose.wav" id="3_md5uu"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ss4as"]
 bg_color = Color(0.996078, 0, 0.431373, 1)
@@ -102,6 +103,10 @@ vertical_alignment = 1
 [node name="LevelWonButton" type="Button" parent="LevelWonContainer/Panel/VBoxContainer"]
 layout_mode = 2
 text = "NEXT LEVEL PLEASE"
+
+[node name="LoseSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_md5uu")
+volume_db = 7.924
 
 [node name="WinSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_dpxl4")
