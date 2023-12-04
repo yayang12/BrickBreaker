@@ -1,6 +1,7 @@
 res://Scenes/main.tscn
 res://Scripts/ball.gd
 res://Scripts/brick_spawner.gd
+res://Scripts/death_zone.gd
 res://Scenes/ball.tscn
 res://Scenes/brick.tscn
 res://Scenes/paddle.tscn
