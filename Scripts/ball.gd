@@ -17,10 +17,8 @@ var start_position: Vector2
 var last_collider_id
 
 @onready var ball_collide_sound = $BallCollideSound
-
-
 @onready var collision_shape_2d = $CollisionShape2D
-
+@onready var ball_wall_collide_sound = $BallWallCollideSound
 
 
 func _ready():
@@ -43,6 +41,7 @@ func _physics_process(delta):
 		ball_collide_sound.play()
 	else:	
 		velocity = velocity.bounce(collision.get_normal())
+		ball_wall_collide_sound.play()
 	
 func start_ball():
 	

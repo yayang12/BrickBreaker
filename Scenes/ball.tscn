@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://b2kciayi0b241"]
+[gd_scene load_steps=6 format=3 uid="uid://b2kciayi0b241"]
 
 [ext_resource type="Texture2D" uid="uid://d0cxmm33rxm22" path="res://Assets/Ball.png" id="1_cfd81"]
 [ext_resource type="Script" path="res://Scripts/ball.gd" id="1_w0wl5"]
 [ext_resource type="AudioStream" uid="uid://d2hxou7ai1xj1" path="res://Assets/Sounds/Break bricker brick sound.wav" id="3_l8orb"]
+[ext_resource type="AudioStream" uid="uid://45agiuc0cpip" path="res://Assets/Sounds/Hit wall.wav" id="4_limep"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_j258b"]
 radius = 32.0
@@ -20,4 +21,8 @@ shape = SubResource("CircleShape2D_j258b")
 
 [node name="BallCollideSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_l8orb")
-volume_db = 6.438
+volume_db = 0.495
+
+[node name="BallWallCollideSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_limep")
+volume_db = 14.362

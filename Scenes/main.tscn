@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://hnabbm2mxoi6"]
+[gd_scene load_steps=12 format=3 uid="uid://hnabbm2mxoi6"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_a0v05"]
 [ext_resource type="PackedScene" uid="uid://da42svs4luong" path="res://Scenes/paddle.tscn" id="1_rqljg"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cte8f8n4upcas" path="res://Scenes/ui.tscn" id="6_rtcur"]
 [ext_resource type="PackedScene" uid="uid://c76unjhfs8en1" path="res://Scenes/death_zone.tscn" id="6_yvi1x"]
 [ext_resource type="Script" path="res://Scripts/brick_spawner.gd" id="7_8ax38"]
+[ext_resource type="AudioStream" uid="uid://b30smdi5yeqyb" path="res://Assets/Sounds/life lost.wav" id="7_ax3kl"]
 [ext_resource type="PackedScene" uid="uid://jws1bt5puct5" path="res://Scenes/brick.tscn" id="8_yc7mg"]
 
 [sub_resource type="OggPacketSequence" id="OggPacketSequence_0etkc"]
@@ -56,6 +57,11 @@ collision_layer = 4
 [node name="DeathZone" parent="." instance=ExtResource("6_yvi1x")]
 position = Vector2(6, 384)
 
+[node name="LifeLostSound" type="AudioStreamPlayer2D" parent="DeathZone"]
+position = Vector2(-6, -384)
+stream = ExtResource("7_ax3kl")
+volume_db = 11.39
+
 [node name="BrickSpawner" type="Node" parent="." node_paths=PackedStringArray("spawn_start")]
 script = ExtResource("7_8ax38")
 brick_scene = ExtResource("8_yc7mg")
@@ -64,6 +70,7 @@ spawn_start = NodePath("../Marker2D")
 
 [node name="background" type="AudioStreamPlayer2D" parent="BrickSpawner"]
 stream = SubResource("AudioStreamOggVorbis_d3wyk")
+volume_db = -3.962
 
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(2.08165e-12, -267)
