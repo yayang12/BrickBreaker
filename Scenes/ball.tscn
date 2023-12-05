@@ -1,30 +1,47 @@
-[gd_scene load_steps=7 format=3 uid="uid://b2kciayi0b241"]
+[gd_scene load_steps=9 format=3 uid="uid://b2kciayi0b241"]
 
-[ext_resource type="Texture2D" uid="uid://d0cxmm33rxm22" path="res://Assets/Ball.png" id="1_cfd81"]
 [ext_resource type="Script" path="res://Scripts/ball.gd" id="1_w0wl5"]
+[ext_resource type="Texture2D" uid="uid://blwem0u37aeb6" path="res://Assets/Santa.png" id="2_18al7"]
 [ext_resource type="AudioStream" uid="uid://d2hxou7ai1xj1" path="res://Assets/Sounds/Break bricker brick sound.wav" id="3_l8orb"]
 [ext_resource type="AudioStream" uid="uid://45agiuc0cpip" path="res://Assets/Sounds/Hit wall.wav" id="4_limep"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_j258b"]
-radius = 32.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3gn2l"]
+radius = 28.0594
+height = 118.08
+
+[sub_resource type="Gradient" id="Gradient_cbjw5"]
+offsets = PackedFloat32Array(0, 0.428044, 0.896679)
+colors = PackedColorArray(1, 0.537436, 0.472692, 1, 5.98351e-06, 0.927894, 0.864133, 1, 0.617168, 0.688002, 0.999222, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_n1h81"]
+gradient = SubResource("Gradient_cbjw5")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_jpxtk"]
 particle_flag_disable_z = true
 gravity = Vector3(2.08165e-12, 2.08165e-12, 2.08165e-12)
 initial_velocity_min = 40.0
 initial_velocity_max = 40.0
+angular_velocity_min = 15.16
+angular_velocity_max = 83.37
 orbit_velocity_min = 0.0
 orbit_velocity_max = 0.0
+tangential_accel_max = 7.37
+scale_min = 5.0
+scale_max = 5.0
+color_ramp = SubResource("GradientTexture1D_n1h81")
 
 [node name="Ball" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_w0wl5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_cfd81")
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_18al7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_j258b")
+position = Vector2(8, -1)
+rotation = -1.5865
+shape = SubResource("CapsuleShape2D_3gn2l")
 
 [node name="BallCollideSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_l8orb")
@@ -34,6 +51,8 @@ volume_db = 0.495
 stream = ExtResource("4_limep")
 volume_db = 14.362
 
-[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+[node name="Sparkle" type="GPUParticles2D" parent="."]
+position = Vector2(-45, 4)
+rotation = -3.80831
 amount = 100
 process_material = SubResource("ParticleProcessMaterial_jpxtk")
