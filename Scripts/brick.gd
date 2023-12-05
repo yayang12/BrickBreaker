@@ -12,9 +12,9 @@ var level = 1
 
 var sprites: Array[Texture2D] = [
 	preload("res://Assets/Brick-Blue.png"),
-	preload("res://Assets/Brick-Gray.png"),
+	preload("res://Assets/Brick-Red.png"),
 	preload("res://Assets/Brick-Green.png"),
-	preload("res://Assets/Brick-Orange.png"),
+	preload("res://Assets/Brick-Green.png"),
 	preload("res://Assets/Brick-Red.png"),
 	preload("res://Assets/Brick-Yellow.png")
 ]
