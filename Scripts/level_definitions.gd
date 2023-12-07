@@ -1,6 +1,6 @@
 extends Node
 
-var current_level = 1 
+var current_level = 1
 
 
 
@@ -17,7 +17,19 @@ var level_2 = [
 	[1,1,1,1,1,1,1,1]
 ]
 
-var levels = [level_1, level_2]
+var level_3 = [
+	[0,0,2,0,0],
+	[0,0,2,0,0],
+	[0,2,2,2,0],
+	[0,2,2,2,0],
+	[2,2,2,2,2],
+	[2,2,2,2,2],
+	[2,2,2,2,2],
+	[3,3,3,3,3,3,3],
+	[3,3,3,3,3,3,3]
+]
+
+var levels = [level_1, level_2, level_3]
 
 func get_current_level():
 	print(levels[0])

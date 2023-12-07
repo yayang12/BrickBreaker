@@ -7,7 +7,7 @@ signal  life_lost
 const VELOCITY_LIMIT = 40
 
 @export var ball_speed = 15
-@export var lives = 3
+@export var lives = 5
 @export var death_zone: DeathZone
 @export var ui: UI
 
@@ -75,6 +75,8 @@ func ball_collision(collider):
 	var collision_x = (ball_center_x - collider_center_x) / (collider_width / 2)
 	
 	var new_velocity = Vector2.ZERO
+	
+	
 	
 	new_velocity.x = velocity_xy * collision_x
 	
