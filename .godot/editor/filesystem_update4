@@ -1,8 +1,10 @@
 res://Scenes/main.tscn
 res://Scripts/ball.gd
 res://Scripts/brick_spawner.gd
-res://Scripts/brick.gd
 res://Scenes/ball.tscn
 res://Scenes/brick.tscn
 res://Scenes/paddle.tscn
 res://Scenes/ui.tscn
+res://snow.tscn
+res://Scripts/brick.gd
+res://implosion.tscn
