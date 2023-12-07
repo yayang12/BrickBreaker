@@ -9,14 +9,15 @@ var level = 1
 @onready var sprite_2d = $Sprite2D
 @onready var collision_shape_2d = $CollisionShape2D
 @onready var background_music = $BackgroundMusic
+@onready var implosion = $implosion
 
 var sprites: Array[Texture2D] = [
-	preload("res://Assets/Brick-Blue.png"),
 	preload("res://Assets/Brick-Red.png"),
 	preload("res://Assets/Brick-Green.png"),
+	preload("res://Assets/Brick-Red.png"),
 	preload("res://Assets/Brick-Green.png"),
 	preload("res://Assets/Brick-Red.png"),
-	preload("res://Assets/Brick-Yellow.png")
+	preload("res://Assets/Brick-Green.png")
 ]
 
 func get_size():
@@ -41,7 +42,7 @@ func fade_out():
 func destroy():
 	queue_free()
 	brick_destroyed.emit()
-	
+	implosion.emit()
 		
 func get_width():
 	return get_size().x

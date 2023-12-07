@@ -1,41 +1,41 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701984539
-README.md::TextFile::-1::1698448013::0::1::::<><>::
-snow.tscn::PackedScene::4655699445117799582::1701808930::0::1::::<><>::
-::res://Assets/::1701808509
-Ball.png::CompressedTexture2D::8919530492729273513::1698448205::1698450914::1::::<><>::
-Brick-Blue.png::CompressedTexture2D::8897275634378196576::1698448205::1698450914::1::::<><>::
-Brick-Gray.png::CompressedTexture2D::8040554436827878061::1698448205::1698450914::1::::<><>::
-Brick-Green.png::CompressedTexture2D::1599964386021623916::1698448205::1698450914::1::::<><>::
-Brick-Orange.png::CompressedTexture2D::853099823280946676::1698448205::1698450914::1::::<><>::
-Brick-Red.png::CompressedTexture2D::8510500834806719073::1698448205::1698450914::1::::<><>::
-Brick-Yellow.png::CompressedTexture2D::1264525063448075210::1698448205::1698450914::1::::<><>::
-icon.svg::CompressedTexture2D::5090516154938273253::1698448205::1698450914::1::::<><>::
-Paddle.png::CompressedTexture2D::5547377063529222900::1698448205::1698450914::1::::<><>::
-Santa.png::CompressedTexture2D::3204179917093498193::1701808470::1701808509::1::::<><>::
-SnowGlobe.png::CompressedTexture2D::1762485379914141494::1701808150::1701808185::1::::<><>::
-VT323-Regular.ttf::FontFile::5233917589173022176::1698448205::1698450914::1::::<><>::
-::res://Assets/Sounds/::1701725346
-Break bricker brick sound.wav::AudioStreamWAV::9070234065445376888::1701202654::1701379606::1::::<><>::
-Hit wall.wav::AudioStreamWAV::2097418964095426747::1701724717::1701724815::1::::<><>::
-life lost.wav::AudioStreamWAV::4404432256129954385::1701725311::1701725346::1::::<><>::
-lose.wav::AudioStreamWAV::8508872550481316651::1701467019::1701467024::1::::<><>::
-Piano.ogg::AudioStreamOggVorbis::1196819383140721417::1701469193::1701469193::1::::<><>::
-Win sound.wav::AudioStreamWAV::4909409023721377324::1701380990::1701380993::1::::<><>::
-::res://Scenes/::1701809002
-ball.tscn::PackedScene::4302298997269614584::1701809002::0::1::::<><>::res://Scripts/ball.gd<>uid://blwem0u37aeb6::::res://Assets/Santa.png<>uid://d2hxou7ai1xj1::::res://Assets/Sounds/Break bricker brick sound.wav<>uid://45agiuc0cpip::::res://Assets/Sounds/Hit wall.wav
-brick.tscn::PackedScene::678255323101461052::1701808978::0::1::::<><>::uid://dy053hichetca::::res://Assets/Brick-Blue.png<>res://Scripts/brick.gd
-death_zone.tscn::PackedScene::7084118113131499884::1699046906::0::1::::<><>::res://Scripts/death_zone.gd
-main.tscn::PackedScene::518160674367624767::1701808978::0::1::::<><>::res://Scripts/main.gd<>uid://da42svs4luong::::res://Scenes/paddle.tscn<>uid://b2kciayi0b241::::res://Scenes/ball.tscn<>res://snow.tscn<>uid://cn3vjoakfsjwg::::res://Scenes/wall.tscn<>uid://cte8f8n4upcas::::res://Scenes/ui.tscn<>uid://c76unjhfs8en1::::res://Scenes/death_zone.tscn<>res://Scripts/brick_spawner.gd<>uid://b30smdi5yeqyb::::res://Assets/Sounds/life lost.wav<>uid://jws1bt5puct5::::res://Scenes/brick.tscn
-paddle.tscn::PackedScene::7220801641171981544::1701808978::0::1::::<><>::uid://clbgqwfkos2xk::::res://Assets/Paddle.png<>res://Scripts/paddle.gd
-ui.tscn::PackedScene::6116701251953832370::1701808978::0::1::::<><>::res://Scripts/ui.gd<>uid://cgtl4f4f8l0um::::res://Assets/VT323-Regular.ttf<>uid://cb7fiqilphjs3::::res://Assets/Sounds/Win sound.wav<>uid://dth05gh6b3d5t::::res://Assets/Sounds/lose.wav
-wall.tscn::PackedScene::5744390776576193206::1699046906::0::1::::<><>::
-::res://Scripts/::1701806756
-ball.gd::GDScript::-1::1701806242::0::1::::Ball<>CharacterBody2D<>::
-brick.gd::GDScript::-1::1701806756::0::1::::Brick<>RigidBody2D<>::
-brick_spawner.gd::GDScript::-1::1701806242::0::1::::BrickSpawner<>Node<>::
-death_zone.gd::GDScript::-1::1701725533::0::1::::DeathZone<>Area2D<>::
-level_definitions.gd::GDScript::-1::1699922954::0::1::::<>Node<>::
-main.gd::GDScript::-1::1698450365::0::1::::<>Node<>::
-paddle.gd::GDScript::-1::1701467390::0::1::::Paddle<>RigidBody2D<>::
-ui.gd::GDScript::-1::1701467135::0::1::::UI<>CanvasLayer<>::
+::res://::1701984190
+README.md::TextFile::-1::1698694111::0::1::::<><>::
+snow.tscn::PackedScene::4655699445117799582::1701808547::0::1::::<><>::
+::res://Assets/::1701984168
+Ball.png::CompressedTexture2D::8919530492729273513::1698694111::1698694111::1::::<><>::
+Brick-Blue.png::CompressedTexture2D::8897275634378196576::1698694111::1698694111::1::::<><>::
+Brick-Gray.png::CompressedTexture2D::8040554436827878061::1698694111::1698694111::1::::<><>::
+Brick-Green.png::CompressedTexture2D::1599964386021623916::1698694111::1698694111::1::::<><>::
+Brick-Orange.png::CompressedTexture2D::853099823280946676::1698694111::1698694111::1::::<><>::
+Brick-Red.png::CompressedTexture2D::8510500834806719073::1698694111::1698694111::1::::<><>::
+Brick-Yellow.png::CompressedTexture2D::1264525063448075210::1698694111::1698694111::1::::<><>::
+icon.svg::CompressedTexture2D::5090516154938273253::1698694111::1698694111::1::::<><>::
+Paddle.png::CompressedTexture2D::5547377063529222900::1698694111::1698694111::1::::<><>::
+Santa.png::CompressedTexture2D::3204179917093498193::1701984168::1701984168::1::::<><>::
+SnowGlobe.png::CompressedTexture2D::1762485379914141494::1701984168::1701984168::1::::<><>::
+VT323-Regular.ttf::FontFile::5233917589173022176::1698694111::1698694111::1::::<><>::
+::res://Assets/Sounds/::1701725664
+Break bricker brick sound.wav::AudioStreamWAV::9070234065445376888::1701469420::1701469420::1::::<><>::
+Hit wall.wav::AudioStreamWAV::2097418964095426747::1701725664::1701725664::1::::<><>::
+life lost.wav::AudioStreamWAV::4404432256129954385::1701725664::1701725664::1::::<><>::
+lose.wav::AudioStreamWAV::8508872550481316651::1701469420::1701469420::1::::<><>::
+Piano.ogg::AudioStreamOggVorbis::1196819383140721417::1701469420::1701469420::1::::<><>::
+Win sound.wav::AudioStreamWAV::4909409023721377324::1701469420::1701469420::1::::<><>::
+::res://Scenes/::1701984174
+ball.tscn::PackedScene::4302298997269614584::1701984174::0::1::::<><>::res://Scripts/ball.gd<>uid://blwem0u37aeb6::::res://Assets/Santa.png<>uid://d2hxou7ai1xj1::::res://Assets/Sounds/Break bricker brick sound.wav<>uid://45agiuc0cpip::::res://Assets/Sounds/Hit wall.wav
+brick.tscn::PackedScene::678255323101461052::1701808532::0::1::::<><>::uid://dy053hichetca::::res://Assets/Brick-Blue.png<>res://Scripts/brick.gd
+death_zone.tscn::PackedScene::7084118113131499884::1699567007::0::1::::<><>::res://Scripts/death_zone.gd
+main.tscn::PackedScene::518160674367624767::1701808532::0::1::::<><>::res://Scripts/main.gd<>uid://da42svs4luong::::res://Scenes/paddle.tscn<>uid://b2kciayi0b241::::res://Scenes/ball.tscn<>uid://b7lixpigwjgio::::res://snow.tscn<>uid://cn3vjoakfsjwg::::res://Scenes/wall.tscn<>uid://cte8f8n4upcas::::res://Scenes/ui.tscn<>uid://c76unjhfs8en1::::res://Scenes/death_zone.tscn<>res://Scripts/brick_spawner.gd<>uid://b30smdi5yeqyb::::res://Assets/Sounds/life lost.wav<>uid://jws1bt5puct5::::res://Scenes/brick.tscn
+paddle.tscn::PackedScene::7220801641171981544::1701808532::0::1::::<><>::uid://clbgqwfkos2xk::::res://Assets/Paddle.png<>res://Scripts/paddle.gd
+ui.tscn::PackedScene::6116701251953832370::1701808532::0::1::::<><>::res://Scripts/ui.gd<>uid://cgtl4f4f8l0um::::res://Assets/VT323-Regular.ttf<>uid://cb7fiqilphjs3::::res://Assets/Sounds/Win sound.wav<>uid://dth05gh6b3d5t::::res://Assets/Sounds/lose.wav
+wall.tscn::PackedScene::5744390776576193206::1698779734::0::1::::<><>::
+::res://Scripts/::1701807676
+ball.gd::GDScript::-1::1701806905::0::1::::Ball<>CharacterBody2D<>::
+brick.gd::GDScript::-1::1701807676::0::1::::Brick<>RigidBody2D<>::
+brick_spawner.gd::GDScript::-1::1701806905::0::1::::BrickSpawner<>Node<>::
+death_zone.gd::GDScript::-1::1701725664::0::1::::DeathZone<>Area2D<>::
+level_definitions.gd::GDScript::-1::1699990409::0::1::::<>Node<>::
+main.gd::GDScript::-1::1698694111::0::1::::<>Node<>::
+paddle.gd::GDScript::-1::1701469420::0::1::::Paddle<>RigidBody2D<>::
+ui.gd::GDScript::-1::1701469420::0::1::::UI<>CanvasLayer<>::
