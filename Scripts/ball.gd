@@ -19,6 +19,8 @@ var last_collider_id
 @onready var ball_collide_sound = $BallCollideSound
 @onready var collision_shape_2d = $CollisionShape2D
 @onready var ball_wall_collide_sound = $BallWallCollideSound
+@onready var implosion = $implosion
+
 
 
 func _ready():
