@@ -6,5 +6,5 @@ res://Scenes/brick.tscn
 res://Scenes/paddle.tscn
 res://Scenes/ui.tscn
 res://snow.tscn
-res://Scripts/level_definitions.gd
 res://Scripts/brick.gd
+res://implosion.tscn
