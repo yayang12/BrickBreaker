@@ -31,7 +31,6 @@ scale_max = 5.0
 color_ramp = SubResource("GradientTexture1D_n1h81")
 
 [node name="Ball" type="CharacterBody2D"]
-scale = Vector2(0.5, 0.5)
 motion_mode = 1
 script = ExtResource("1_w0wl5")
 
